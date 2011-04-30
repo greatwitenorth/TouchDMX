@@ -1,0 +1,38 @@
+====About============
+TouchDMX is a way to use an Arduino, iPhone or iPad with TouchOSC installed and Processing to control DMX lights wirelessly.
+
+====Installation=====
+
+1. Get an Arduino and build the DMX shield. Instructions can be found here:
+http://www.arduino.cc/playground/DMX/DMXShield
+Schematics have also been included with the source code.
+
+2. Move the 'TouchDMX' folder located in 'Arduino' to ~/Documents/Arduino/
+
+3. Load the sketch into your Arduino.
+
+4. Download Processing from processing.org so that we can run the source code
+
+5. Download the processing libraries controlP5 and oscP5 from:
+http://www.sojamo.de/libraries/
+
+6. On line 43 of the processing sketch you may enter your iPhone's IP address so that you don't need to enter it every time you start the sketch.
+
+7. Move the TouchDMX folder from the Processing folder into ~/Documents/Processing
+
+8. Open it up and run the sketch. You computer is now acting as the OSC server. Any messages it receives, Processing parses it then sends it to the Arduino via usb (technically it's running a serial protocol).
+
+9. Plug in you DMX RGB light into the shield and set it to the appropriate channel. Defaults are 20-23 for the 'Top' lights, 60-63 for the 'Back' lights.
+
+10. Have fun controlling you lights from your iPhone!
+
+
+====Questions=======
+
+Any questions please feel free to email me:
+nickv@makesomecode.com
+
+
+====Future==========
+
+The code is very messy at the moment and needs a bit of a rewrite. I hope to do that at some point. For the moment it seems to work though.
